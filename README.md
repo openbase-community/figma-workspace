@@ -3,6 +3,15 @@
 This workspace contains a refresh script for vendoring the Figma Codex plugin
 from the OpenAI plugins repository.
 
+## Motivation
+
+Codex does not currently use progressive disclosure for MCP servers. Keeping the
+Figma MCP enabled globally can bloat every session's context, even when the work
+has nothing to do with Figma.
+
+This workspace keeps the Figma plugin and skills available locally, so the Figma
+MCP can stay scoped to projects that actually need it.
+
 ## Refreshing
 
 Run:
